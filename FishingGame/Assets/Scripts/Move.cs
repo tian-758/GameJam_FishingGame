@@ -28,7 +28,6 @@ public class Move : MonoBehaviour
         // get the animator component of the GameObject
         rb2d = GetComponent<Rigidbody2D>();
         isRight = 1f;
-        spriteRenderer = GetComponent<SpriteRenderer>();
 
     }
 
@@ -48,13 +47,11 @@ public class Move : MonoBehaviour
         {
             rb2d.velocity = new Vector2(speed, rb2d.velocity.y);
             isRight = 1f;
-            spriteRenderer.flipX = true;
         }
         else if (Input.GetKey("a") || Input.GetKey("left"))
         {
             rb2d.velocity = new Vector2(-speed, rb2d.velocity.y);
             isRight = -1f;
-            spriteRenderer.flipX = false;
         }
         else
         {
