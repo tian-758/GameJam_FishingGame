@@ -6,8 +6,8 @@ public class FishingRod : MonoBehaviour
 {
     //reference to the animator component
     Animator animator;
-    Rigidbody2D rb2d;
-    DistanceJoint2D dj2d;
+    public Rigidbody2D rb2d;
+    public DistanceJoint2D dj2d;
     SpriteRenderer spriteRenderer;
     AudioSource audioWalk;
     AudioSource audioJump;
@@ -40,7 +40,7 @@ public class FishingRod : MonoBehaviour
                 hook.SetActive(false);
                 deployed = false;
             } else {
-                hook.transform.localPosition = new Vector2(7f*player.isRight, -1.5f);
+                hook.transform.localPosition = new Vector2(7f*player.isRight, -3f);
                 hook.SetActive(true);
                 deployed = true;
             }
