@@ -10,7 +10,7 @@ public class Move : MonoBehaviour
     SpriteRenderer spriteRenderer;
     AudioSource audioWalk;
     AudioSource audioJump;
-    [SerializeField] public GameObject hook; 
+    [SerializeField]FishingRod hook; 
     
     
     bool isGrounded;
@@ -64,24 +64,10 @@ public class Move : MonoBehaviour
         CooldownTime -= Time.deltaTime;
         if (Input.GetKey("space") && CooldownTime <= 0f) {
             CooldownTime = 2.0f;
-            hook.GetComponent<FishingRod>().toggleDeploy();
+            hook.toggleDeploy();
             
         }
 
 
-    }
-
-    public void transformToSuper() {
-        hook.transform.localScale *= 2f;
-        hook.GetComponent<FishingRod>().dj2d.distance += 2;
-        hook.GetComponent<FishingRod>().rb2d.gravityScale = .8f;
-        hook.GetComponent<FishingRod>().rb2d.drag = 0f;
-    }
-
-    public void transformToNormal() {
-        hook.transform.localScale /= 2f;
-        hook.GetComponent<FishingRod>().dj2d.distance -= 2;
-        hook.GetComponent<FishingRod>().rb2d.gravityScale = .2f;
-        hook.GetComponent<FishingRod>().rb2d.drag =.33f;
     }
 }
