@@ -10,9 +10,13 @@ public class Move : MonoBehaviour
     SpriteRenderer spriteRenderer;
     AudioSource audioWalk;
     AudioSource audioJump;
-
+    [SerializeField]GameObject hook; 
+    
     bool isGrounded;
+    bool hookOut = false;
 
+    [SerializeField]
+    int speed = 4;
     [SerializeField]
     Transform groundCheck = null;
 
@@ -37,19 +41,36 @@ public class Move : MonoBehaviour
         // change the animator's AnimState variable if a key is pressed
         if (Input.GetKey("d") || Input.GetKey("right"))
         {
-            rb2d.velocity = new Vector2(2, rb2d.velocity.y);
+            rb2d.velocity = new Vector2(speed, rb2d.velocity.y);
         }
         else if (Input.GetKey("a") || Input.GetKey("left"))
         {
-            rb2d.velocity = new Vector2(-2, rb2d.velocity.y);
+            rb2d.velocity = new Vector2(-speed, rb2d.velocity.y);
         }
         else
         {
             rb2d.velocity = new Vector2(0, rb2d.velocity.y);
         }
-        if (Input.GetKey("up") && isGrounded || Input.GetKey("w") && isGrounded)
-        {
-            rb2d.velocity = new Vector2(rb2d.velocity.x, 5);
+
+        if (Input.GetKey("space")) {
+
+            hook.SetActive(true);
+            if (!hookOut) {
+                speed -= 1;
+            }
+            hookOut = true;
+            
         }
+
+        if (Input.GetKey("p")) {
+
+            hook.SetActive(false);
+            if (hookOut) {
+                speed += 1;
+            }
+            hookOut = false;
+
+        }
+
     }
 }
