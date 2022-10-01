@@ -483,6 +483,7 @@ GameObject:
   - component: {fileID: 1849598612}
   - component: {fileID: 1849598611}
   - component: {fileID: 1849598610}
+  - component: {fileID: 1849598615}
   m_Layer: 0
   m_Name: FishingHook
   m_TagString: Hook
@@ -613,6 +614,19 @@ Transform:
   m_Father: {fileID: 1918626800}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1849598615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849598609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b00b673bde9a0f4f8da8a5737976baa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hook: {fileID: 1849598609}
 --- !u!1 &1918626797
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,7 +637,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1918626800}
   - component: {fileID: 1918626799}
-  - component: {fileID: 1918626803}
   - component: {fileID: 1918626798}
   - component: {fileID: 1918626801}
   - component: {fileID: 1918626802}
@@ -646,8 +659,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 167c90941e3a17647a7a911120f1d91e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hook: {fileID: 1918626803}
-  CooldownTime: 0
+  hook: {fileID: 1849598615}
+  CooldownTime: 1
   speed: 4
   groundCheck: {fileID: 750151879}
 --- !u!212 &1918626799
@@ -766,19 +779,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1918626803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1918626797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b00b673bde9a0f4f8da8a5737976baa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hook: {fileID: 1849598609}
 --- !u!1001 &1817229070973923060
 PrefabInstance:
   m_ObjectHideFlags: 0
