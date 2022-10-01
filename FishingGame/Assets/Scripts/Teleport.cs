@@ -5,6 +5,7 @@ using UnityEngine;
 public class Teleport : MonoBehaviour
 {
     private Transform destination;
+    public Transform player;
 
     public bool isForward;
     public float distance = 0.2f;
@@ -19,8 +20,8 @@ public class Teleport : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other) {
-        if (Vector2.Distance(transform.position, other.transform.position) > distance) {
-            other.transform.position = new Vector2(destination.position.x, destination.position.y);
+        if (Vector2.Distance(transform.position, player.position) > distance) {
+            player.position = new Vector2(destination.position.x, destination.position.y);
         }
     }
 
