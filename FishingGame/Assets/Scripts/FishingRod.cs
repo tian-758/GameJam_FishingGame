@@ -23,7 +23,7 @@ public class FishingRod : MonoBehaviour
         // get the animator component of the GameObject
         rb2d = GetComponent<Rigidbody2D>();
         dj2d = GetComponent<DistanceJoint2D>();
-        hook = GetComponent<GameObject>();
+        hook = gameObject;
         deployed = false;
     }
 

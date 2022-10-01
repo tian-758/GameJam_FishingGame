@@ -12,7 +12,9 @@ public class Move : MonoBehaviour
     AudioSource audioJump;
     [SerializeField]FishingRod hook; 
     
+    
     bool isGrounded;
+    public float CooldownTime = 0f;
 
     [SerializeField]
     int speed = 4;
@@ -24,6 +26,7 @@ public class Move : MonoBehaviour
     {
         // get the animator component of the GameObject
         rb2d = GetComponent<Rigidbody2D>();
+
     }
 
     // Update is called once per frame
@@ -51,8 +54,9 @@ public class Move : MonoBehaviour
             rb2d.velocity = new Vector2(0, rb2d.velocity.y);
         }
 
-        if (Input.GetKey("space")) {
-
+        CooldownTime -= Time.deltaTime;
+        if (Input.GetKey("space") && CooldownTime <= 0f) {
+            CooldownTime = 2.0f;
             hook.toggleDeploy();
             
         }
