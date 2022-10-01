@@ -31,7 +31,7 @@ public class Move : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
 
     }
-    
+
 
     // Update is called once per frame
     private void FixedUpdate()

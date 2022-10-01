@@ -43,7 +43,7 @@ public class FishingRod : MonoBehaviour
                 hook.transform.localPosition = new Vector2(7f*player.isRight, -3f);
                 hook.SetActive(true);
                 deployed = true;
-            }
+        }
 
     }
 }
