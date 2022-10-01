@@ -13,6 +13,7 @@ public class FishingRod : MonoBehaviour
     AudioSource audioJump;
 
     [SerializeField] GameObject hook;
+    [SerializeField] Move player;
 
     float animationDuration = .5f;
     bool deployed;
@@ -39,7 +40,7 @@ public class FishingRod : MonoBehaviour
                 hook.SetActive(false);
                 deployed = false;
             } else {
-                hook.transform.localPosition = new Vector2(6f, -1.5f);
+                hook.transform.localPosition = new Vector2(7f*player.isRight, -1.5f);
                 hook.SetActive(true);
                 deployed = true;
             }
