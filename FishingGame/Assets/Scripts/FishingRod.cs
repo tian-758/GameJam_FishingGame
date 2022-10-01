@@ -12,17 +12,37 @@ public class FishingRod : MonoBehaviour
     AudioSource audioWalk;
     AudioSource audioJump;
 
+    [SerializeField] GameObject hook;
+
+    float animationDuration = .5f;
+    bool deployed;
+
     // Start is called before the first frame update
     void Start()
     {
         // get the animator component of the GameObject
         rb2d = GetComponent<Rigidbody2D>();
         dj2d = GetComponent<DistanceJoint2D>();
+        hook = GetComponent<GameObject>();
+        deployed = false;
     }
 
     // Update is called once per frame
     private void FixedUpdate()
     {
         
+    }
+
+    public void toggleDeploy() {
+
+        if (deployed) {
+                hook.SetActive(false);
+                deployed = false;
+            } else {
+                hook.transform.position = new Vector2(5f, -1f);
+                hook.SetActive(true);
+                deployed = true;
+            }
+
     }
 }

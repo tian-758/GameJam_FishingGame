@@ -10,10 +10,9 @@ public class Move : MonoBehaviour
     SpriteRenderer spriteRenderer;
     AudioSource audioWalk;
     AudioSource audioJump;
-    [SerializeField]GameObject hook; 
+    [SerializeField]FishingRod hook; 
     
     bool isGrounded;
-    bool hookOut = false;
 
     [SerializeField]
     int speed = 4;
@@ -54,23 +53,10 @@ public class Move : MonoBehaviour
 
         if (Input.GetKey("space")) {
 
-            hook.SetActive(true);
-            if (!hookOut) {
-                speed -= 1;
-            }
-            hookOut = true;
+            hook.toggleDeploy();
             
         }
 
-        if (Input.GetKey("p")) {
-
-            hook.SetActive(false);
-            if (hookOut) {
-                speed += 1;
-            }
-            hookOut = false;
-
-        }
 
     }
 }
