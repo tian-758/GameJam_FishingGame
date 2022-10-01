@@ -39,7 +39,7 @@ public class FishingRod : MonoBehaviour
                 hook.SetActive(false);
                 deployed = false;
             } else {
-                hook.transform.localPosition = new Vector2(5f, -1f);
+                hook.transform.localPosition = new Vector2(6f, -1.5f);
                 hook.SetActive(true);
                 deployed = true;
             }
