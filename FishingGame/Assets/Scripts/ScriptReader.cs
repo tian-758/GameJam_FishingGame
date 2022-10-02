@@ -13,8 +13,8 @@ public class ScriptReader : MonoBehaviour
 
     public TMP_Text dialogueBox;
     public TMP_Text nameTag;
-
     public Image characterIcon;
+
 
     void Start()
     {
@@ -53,8 +53,8 @@ public class ScriptReader : MonoBehaviour
         nameTag.text = SpeakerName;
     }
 
-    public void ChacterIcon(string name) {
-        var charIcon = Sprites.Load<Sprite>("VNSprites/" + name);
+    public void CharacterIcon(string name) {
+        var charIcon = Resources.Load<Sprite>("VNSprites/" + name);
         characterIcon.sprite = charIcon;
     }
 
