@@ -5,7 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Level1_Swamp.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: cd10bb0bb055e91479d00e4c9a9a79f2
+  - enabled: 1
+    path: Assets/Scenes/Level2_River.unity
+    guid: 4d22b1d7af4136c4ab72eb47f009f05a
+  - enabled: 1
+    path: Assets/Scenes/Level3_Ocean.unity
+    guid: 8ce17d947d947b4478338ae38d657a3a
+  - enabled: 1
+    path: Assets/Scenes/VisualNovel_Act1.unity
+    guid: 8209e84a4fe2d614b89736da491c2d93
   m_configObjects: {}

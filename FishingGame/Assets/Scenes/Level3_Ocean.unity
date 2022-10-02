@@ -845,15 +845,15 @@ PrefabInstance:
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishLowWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: e4ef3049f7f23584abef1061b6fa2371, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: e2b1b82a5a5e44f4dba72564ff30472f, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishHighWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: e2b1b82a5a5e44f4dba72564ff30472f, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: 6b8b9aebebac9a043b1e58ea19b4c4b6, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishMediumWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: bdff42da7b1c5294d821512c7de090d0, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: 7bcf9598921303b4e86136b0196393bd, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: spawnIntervalLow
       value: 3.5
@@ -2399,18 +2399,18 @@ PrefabInstance:
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishLowWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: e4ef3049f7f23584abef1061b6fa2371, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: e2b1b82a5a5e44f4dba72564ff30472f, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishHighWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: e2b1b82a5a5e44f4dba72564ff30472f, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: 6b8b9aebebac9a043b1e58ea19b4c4b6, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishMediumWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: bdff42da7b1c5294d821512c7de090d0, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: 7bcf9598921303b4e86136b0196393bd, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: spawnIntervalLow
-      value: 7.64
+      value: 5.8
       objectReference: {fileID: 0}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: spawnIntervalMed
