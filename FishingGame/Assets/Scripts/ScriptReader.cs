@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Ink.Runtime;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ScriptReader : MonoBehaviour
 {
@@ -15,6 +16,10 @@ public class ScriptReader : MonoBehaviour
     public TMP_Text nameTag;
     public Image characterIcon;
 
+    [SerializeField]
+    private GridLayoutGroup choiceHolder;
+    [SerializeField]
+    private Button choiceBasePrefab;
 
     void Start()
     {
@@ -42,8 +47,48 @@ public class ScriptReader : MonoBehaviour
             text = text?.Trim(); // Removes white space from the text
             dialogueBox.text = text;
         }
+        else if (_StoryScript.currentChoices.Count > 0){
+            DisplayChoices();
+            //dialogueBox.text = "End";
+        }
         else {
-            dialogueBox.text = "End";
+            //loadNextScene.LoadNextScene(); // No more dialogue, move on to fishing
+        }
+    }
+
+    private void DisplayChoices() {
+        if(choiceHolder.GetComponentsInChildren<Button>().Length > 0) return;
+
+        for(int i = 0; i < _StoryScript.currentChoices.Count; i++) {
+            var choice = _StoryScript.currentChoices[i];
+            var button = CreateChoiceButton(choice.text); //creates a choice button
+
+            button.onClick.AddListener(() => OnClickChoiceButton(choice));
+        }
+    }
+
+    Button CreateChoiceButton(string text) {
+        var choiceButton = Instantiate(choiceBasePrefab);
+        choiceButton.transform.SetParent(choiceHolder.transform, false);
+
+        // Change button prefab text
+        var buttonText = choiceButton.GetComponentInChildren<TMP_Text>();
+        buttonText.text = text;
+
+        return choiceButton;
+    }
+
+    void OnClickChoiceButton(Choice choice) {
+        _StoryScript.ChooseChoiceIndex(choice.index);
+        RefreshChoiceView();
+        DisplayNextLine();
+    }
+
+    void RefreshChoiceView() {
+        if(choiceHolder != null) {
+            foreach(var button in choiceHolder.GetComponentsInChildren<Button>()) {
+                Destroy(button.gameObject);
+            }
         }
     }
 

@@ -117,8 +117,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontialTurnRate: 5.88
   fishSpeed: 0.81
-  verticleBobRate: 1.49
-  riseSpeed: 2.02
+  verticleBobRate: 1.29
+  riseSpeed: 1.66
   pointWorth: 3
   timerHorizontial: 0
   timerVerticle: 0
