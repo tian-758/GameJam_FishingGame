@@ -489,7 +489,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0328f9ab31cfa56438faecb6aeab1934, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4edfe0bbbdbf80845b235b01904d9142, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -845,26 +845,26 @@ PrefabInstance:
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishLowWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: 4bf9e47672f58714aaaff61324804081, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: e4ef3049f7f23584abef1061b6fa2371, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishHighWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: e4ef3049f7f23584abef1061b6fa2371, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: e2b1b82a5a5e44f4dba72564ff30472f, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishMediumWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: e47b6c597991e4746966d5ccf7a33f0d, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: bdff42da7b1c5294d821512c7de090d0, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: spawnIntervalLow
       value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: spawnIntervalMed
-      value: 5
+      value: 3.61
       objectReference: {fileID: 0}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: spawnIntervalHigh
-      value: 5
+      value: 3.41
       objectReference: {fileID: 0}
     - target: {fileID: 672229883513333284, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: m_Name
@@ -1197,7 +1197,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0328f9ab31cfa56438faecb6aeab1934, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4edfe0bbbdbf80845b235b01904d9142, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1581,7 +1581,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0328f9ab31cfa56438faecb6aeab1934, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4edfe0bbbdbf80845b235b01904d9142, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1766,7 +1766,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0328f9ab31cfa56438faecb6aeab1934, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4edfe0bbbdbf80845b235b01904d9142, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1953,7 +1953,7 @@ MonoBehaviour:
   scoreText: {fileID: 362777113}
   pointText: {fileID: 194844224}
   tide: {fileID: 593826050}
-  pointsTillHighTide: 10
+  pointsTillHighTide: 20
   score: 0
   points: 0
 --- !u!1 &1918626797
@@ -2399,15 +2399,27 @@ PrefabInstance:
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishLowWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: 4bf9e47672f58714aaaff61324804081, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: e4ef3049f7f23584abef1061b6fa2371, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishHighWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: e4ef3049f7f23584abef1061b6fa2371, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: e2b1b82a5a5e44f4dba72564ff30472f, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishMediumWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: e47b6c597991e4746966d5ccf7a33f0d, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: bdff42da7b1c5294d821512c7de090d0, type: 3}
+    - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
+      propertyPath: spawnIntervalLow
+      value: 7.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
+      propertyPath: spawnIntervalMed
+      value: 15.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
+      propertyPath: spawnIntervalHigh
+      value: 30.2
+      objectReference: {fileID: 0}
     - target: {fileID: 672229883513333284, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: m_Name
       value: FishSpawnerNormal

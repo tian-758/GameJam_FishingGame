@@ -115,10 +115,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e92fe24ffeb762d41a3b922a51004a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontialTurnRate: 10.86
-  fishSpeed: 1.15
-  verticleBobRate: 1.27
-  riseSpeed: 0.7
+  horizontialTurnRate: 10.09
+  fishSpeed: 1
+  verticleBobRate: 0.73
+  riseSpeed: 1
   pointWorth: 2
   timerHorizontial: 0
   timerVerticle: 0
