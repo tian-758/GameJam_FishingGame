@@ -10,6 +10,8 @@ public class HighTide : MonoBehaviour
     public GameObject normalSpawner;
     [SerializeField]
     public GameObject superSpawner;
+    [SerializeField]
+    public Camera camera;
 
     
     [SerializeField]
@@ -48,6 +50,7 @@ public class HighTide : MonoBehaviour
         character.transformToSuper();
         normalSpawner.SetActive(false);
         superSpawner.SetActive(true);
+        StartCoroutine(moveCamDown(2f));
         
         
     }
@@ -57,6 +60,27 @@ public class HighTide : MonoBehaviour
         character.transformToNormal();
         normalSpawner.SetActive(true);
         superSpawner.SetActive(false);
+        StartCoroutine(moveCamUp(2f));
     }
 
+    private IEnumerator moveCamUp(float distance) {
+        
+        Vector3 newPosition = camera.transform.position + new Vector3(0f, distance, 0f);
+
+        while (camera.transform.position.y <= newPosition.y) {
+            camera.transform.position = new Vector3(camera.transform.position.x, Vector3.Lerp(camera.transform.position, newPosition, .1f).y, camera.transform.position.z);
+            yield return new WaitForSeconds(.01f);
+        }
+
+    }
+    private IEnumerator moveCamDown(float distance) {
+        
+        Vector3 newPosition = camera.transform.position - new Vector3(0f, distance, 0f);
+
+        while (camera.transform.position.y >= newPosition.y) {
+            camera.transform.position = new Vector3(camera.transform.position.x, Vector3.Lerp(camera.transform.position, newPosition, .1f).y, camera.transform.position.z);
+            yield return new WaitForSeconds(.01f);
+        }
+
+    }
 }
