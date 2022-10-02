@@ -1984,8 +1984,8 @@ MonoBehaviour:
   hook: {fileID: 1849598609}
   isRight: 0
   CooldownTime: 1
-  animationCastDuration: 2
   animationReelDuration: 1
+  animationCastDuration: 1
   speed: 4
 --- !u!212 &1918626799
 SpriteRenderer:

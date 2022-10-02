@@ -16,8 +16,9 @@ public class Move : MonoBehaviour
     public float isRight;
     public float CooldownTime = 0f;
 
-    public float animationCastDuration = 1f;
+    
     public float animationReelDuration = 1f;
+    public float animationCastDuration = 1f;
 
     [SerializeField]
     int speed = 4;
@@ -34,6 +35,9 @@ public class Move : MonoBehaviour
         lineOut = false;
         animator.Play("reelInAnimation");
         StartCoroutine(waitForAnimation(animationReelDuration));
+
+        Debug.Log("reel duration:" + animationReelDuration);
+        Debug.Log("cast duration:" + animationCastDuration);
 
     }
 
