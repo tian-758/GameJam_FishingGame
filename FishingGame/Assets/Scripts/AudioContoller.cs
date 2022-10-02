@@ -28,4 +28,19 @@ public class AudioContoller : MonoBehaviour
         loop.Play();
 
     }
+
+    
+    public IEnumerator StartFade(float duration, float targetVolume)
+    {
+        float currentTime = 0;
+        float start = loop.volume;
+        while (currentTime < duration)
+        {
+            currentTime += Time.deltaTime;
+            loop.volume = Mathf.Lerp(start, targetVolume, currentTime / duration);
+            yield return null;
+        }
+        yield break;
+    }
+
 }
