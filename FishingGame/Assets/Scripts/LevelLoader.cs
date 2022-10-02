@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour
 {
     public Animator transition;
+    public GameObject bgm;
     public float transitionAnimationDuration = 1f;
 
     public void LoadNextScene() {
@@ -17,6 +18,7 @@ public class LevelLoader : MonoBehaviour
     IEnumerator LoadLevel(int levelIndex) {
         transition.SetTrigger("Start");
 
+        StartCoroutine(bgm.GetComponent<AudioContoller>().StartFade(transitionAnimationDuration, 0f));
         yield return new WaitForSeconds(transitionAnimationDuration);
 
         SceneManager.LoadScene(levelIndex);
