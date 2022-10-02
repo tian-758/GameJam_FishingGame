@@ -9,13 +9,10 @@ public class FishingRod : MonoBehaviour
     public Rigidbody2D rb2d;
     public DistanceJoint2D dj2d;
     SpriteRenderer spriteRenderer;
-    AudioSource audioWalk;
-    AudioSource audioJump;
 
     [SerializeField] GameObject hook;
     [SerializeField] Move player;
 
-    float animationDuration = .5f;
     bool deployed;
 
     // Start is called before the first frame update
@@ -26,12 +23,6 @@ public class FishingRod : MonoBehaviour
         dj2d = GetComponent<DistanceJoint2D>();
         hook = gameObject;
         deployed = true;
-    }
-
-    // Update is called once per frame
-    private void FixedUpdate()
-    {
-        
     }
 
     public void toggleDeploy() {

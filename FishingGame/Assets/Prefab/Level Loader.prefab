@@ -121,8 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb1a632c022ba84fa99e6f3a122d9eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transition: {fileID: 0}
-  activateNextScene: 0
+  transition: {fileID: 1817229070938321594}
   transitionAnimationDuration: 1
 --- !u!1 &1817229070938321592
 GameObject:

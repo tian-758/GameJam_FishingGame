@@ -12,8 +12,6 @@ public class Move : MonoBehaviour
     AudioSource audioJump;
     [SerializeField]public GameObject hook; 
     
-    
-    bool isGrounded;
     bool lineOut;
     public float isRight;
     public float CooldownTime = 0f;
@@ -23,8 +21,6 @@ public class Move : MonoBehaviour
 
     [SerializeField]
     int speed = 4;
-    [SerializeField]
-    Transform groundCheck = null;
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +33,6 @@ public class Move : MonoBehaviour
         
         lineOut = false;
         animator.Play("reelInAnimation");
-        Debug.Log("reeling in");
         StartCoroutine(waitForAnimation(animationReelDuration));
 
     }
@@ -46,14 +41,7 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
-        if (Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Water")))
-        {
-            isGrounded = true;
-        }
-        else
-        {
-            isGrounded = false;
-        }
+        
         // change the animator's AnimState variable if a key is pressed
         if (Input.GetKey("d") || Input.GetKey("right"))
         {
@@ -88,13 +76,11 @@ public class Move : MonoBehaviour
             if(lineOut){
                 lineOut = false;
                 animator.Play("reelInAnimation");
-                Debug.Log("reeling in");
                 StartCoroutine(waitForAnimation(animationReelDuration));
             }
             else{
                 lineOut = true;
                 animator.Play("CastLineAnimation");
-                Debug.Log("casting");
                 StartCoroutine(waitForAnimation(animationCastDuration));
             }
         }
@@ -115,7 +101,6 @@ public class Move : MonoBehaviour
     }
 
     IEnumerator waitForAnimation(float duration) {
-        Debug.Log(duration);
         yield return new WaitForSeconds(duration);
         hook.GetComponent<FishingRod>().toggleDeploy();
     }

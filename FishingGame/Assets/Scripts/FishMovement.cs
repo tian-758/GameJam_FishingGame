@@ -38,7 +38,7 @@ public class FishMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Collider c = this.GetComponent<Collider>();
+        
         timerHorizontial-= Time.deltaTime;
         timerVerticle -= Time.deltaTime;
 
@@ -49,7 +49,7 @@ public class FishMovement : MonoBehaviour
         }
 
         if (timerVerticle <= 0f) {
-            timerVerticle =verticleBobRate;
+            timerVerticle = verticleBobRate;
             riseSpeed *= -1f;
             updatedVelocity = true;
         }
