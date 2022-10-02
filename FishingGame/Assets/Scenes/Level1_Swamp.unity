@@ -1047,10 +1047,10 @@ DistanceJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
+  m_Anchor: {x: 0.0000002648746, y: 0.000000019131306}
   m_ConnectedAnchor: {x: 0, y: -0.5779548}
   m_AutoConfigureDistance: 1
-  m_Distance: 7.4071794
+  m_Distance: 7.1923895
   m_MaxDistanceOnly: 1
 --- !u!50 &1849598611
 Rigidbody2D:
@@ -1086,9 +1086,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0076646726, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.25848418
 --- !u!212 &1849598613
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1130,7 +1130,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f79e45f6deea4654084c8bfee0007e79, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1149,8 +1149,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849598609}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7, y: -3, z: 0}
-  m_LocalScale: {x: 0.4673, y: 0.4894, z: 1}
+  m_LocalPosition: {x: -6.8325, y: -2.8246, z: 0}
+  m_LocalScale: {x: 0.80229026, y: 0.84023297, z: 1.7168634}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1918626800}
