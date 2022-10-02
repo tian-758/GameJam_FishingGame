@@ -11,15 +11,20 @@ public class FishSpawner : MonoBehaviour
     [SerializeField]private float spawnIntervalLow = 7f;
     [SerializeField]private float spawnIntervalMed = 18f;
     [SerializeField]private float spawnIntervalHigh = 30f;
-    
+  
 
     // Start is called before the first frame update
     void Start()
-    {   
-        
+    {
+
         StartCoroutine(spawnFish(spawnIntervalLow, fishLowWorth));
         StartCoroutine(spawnFish(spawnIntervalMed, fishMediumWorth));
         StartCoroutine(spawnFish(spawnIntervalHigh, fishHighWorth));
+
+    }
+
+    void Update() {
+        
     }
 
     private IEnumerator spawnFish(float interval, GameObject fish) {

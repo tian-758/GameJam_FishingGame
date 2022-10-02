@@ -6,8 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
+    [SerializeField]
     public float timeValue = 300;
     public Text timeText;
+
+    [SerializeField]
+    public LevelLoader loadNextScene;
 
     // Update is called once per frame
     void Update()
@@ -25,7 +29,8 @@ public class Timer : MonoBehaviour
     void DisplayTime(float timeToDisplay) {
         if(timeToDisplay < 0) {
             timeToDisplay = 0;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            loadNextScene.LoadNextScene();
         }
         else if(timeToDisplay > 0){
             timeToDisplay += 1;

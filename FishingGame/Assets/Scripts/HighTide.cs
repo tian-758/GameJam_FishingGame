@@ -11,46 +11,24 @@ public class HighTide : MonoBehaviour
     [SerializeField]
     public GameObject superSpawner;
     [SerializeField]
-    public Camera camera;
+    public Camera mainCamera;
+    [SerializeField]
+    public float highTideDuration;
 
-    
-
-
-    public bool activated;
 
     // Start is called before the first frame update
     void Start()
     {
-        
-        activated = true;
 
     }
 
-    void Update() {
-
-        if (Input.GetKey("q") && activated) {
-            activateHighTide();
-            activated = false;
-        }
-        
-        if (Input.GetKey("w") && activated) {
-            deactivateHighTide();
-            activated = false;
-        }
-
-        if (Input.GetKey("e")) {
-            activated = true;
-        }
-
-    }
-
+    
     public void activateHighTide()
     {
         character.transformToSuper();
         normalSpawner.SetActive(false);
         superSpawner.SetActive(true);
         StartCoroutine(moveCamDown(2f));
-        
         
     }
 
@@ -64,20 +42,20 @@ public class HighTide : MonoBehaviour
 
     private IEnumerator moveCamUp(float distance) {
         
-        Vector3 newPosition = camera.transform.position + new Vector3(0f, distance, 0f);
+        Vector3 newPosition = mainCamera.transform.position + new Vector3(0f, distance, 0f);
 
-        while (camera.transform.position.y <= newPosition.y) {
-            camera.transform.position = new Vector3(camera.transform.position.x, Vector3.Lerp(camera.transform.position, newPosition, .1f).y, camera.transform.position.z);
+        while (mainCamera.transform.position.y <= newPosition.y) {
+            mainCamera.transform.position = new Vector3(mainCamera.transform.position.x, Vector3.Lerp(mainCamera.transform.position, newPosition, .1f).y, mainCamera.transform.position.z);
             yield return new WaitForSeconds(.01f);
         }
 
     }
     private IEnumerator moveCamDown(float distance) {
         
-        Vector3 newPosition = camera.transform.position - new Vector3(0f, distance, 0f);
+        Vector3 newPosition = mainCamera.transform.position - new Vector3(0f, distance, 0f);
 
-        while (camera.transform.position.y >= newPosition.y) {
-            camera.transform.position = new Vector3(camera.transform.position.x, Vector3.Lerp(camera.transform.position, newPosition, .1f).y, camera.transform.position.z);
+        while (mainCamera.transform.position.y >= newPosition.y) {
+            mainCamera.transform.position = new Vector3(mainCamera.transform.position.x, Vector3.Lerp(mainCamera.transform.position, newPosition, .1f).y, mainCamera.transform.position.z);
             yield return new WaitForSeconds(.01f);
         }
 

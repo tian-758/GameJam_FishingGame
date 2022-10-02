@@ -6,16 +6,7 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour
 {
     public Animator transition;
-    public bool activateNextScene = false;
     public float transitionAnimationDuration = 1f;
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (activateNextScene) {
-            LoadNextScene();
-        }
-    }
 
     public void LoadNextScene() {
 
