@@ -10,6 +10,7 @@ TagManager:
   - Backward Wall
   - Wall1
   - Wall2
+  - Data
   layers:
   - Default
   - TransparentFX
