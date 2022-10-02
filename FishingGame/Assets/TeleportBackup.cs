@@ -2,21 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Teleport : MonoBehaviour
+public class TeleportBackup : MonoBehaviour // Another set of teleporters
 {
     private Transform destination;
     public Transform player;
 
     public bool isForward;
-    public bool isWall2;
     public float distance = 0.2f;
 
     void Start() {
         if (isForward == false) {
-            destination = GameObject.FindGameObjectWithTag("Forward Wall").GetComponent<Transform>();
+            destination = GameObject.FindGameObjectWithTag("Wall1").GetComponent<Transform>();
         }
         else {
-            destination = GameObject.FindGameObjectWithTag("Backward Wall").GetComponent<Transform>();
+            destination = GameObject.FindGameObjectWithTag("Wall2").GetComponent<Transform>();
         }
     }
 

@@ -8,6 +8,8 @@ TagManager:
   - Fish
   - Forward Wall
   - Backward Wall
+  - Wall1
+  - Wall2
   layers:
   - Default
   - TransparentFX
