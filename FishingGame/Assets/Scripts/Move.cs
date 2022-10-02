@@ -27,7 +27,7 @@ public class Move : MonoBehaviour
     {
         // get the animator component of the GameObject
         rb2d = GetComponent<Rigidbody2D>();
-        isRight = 1f;
+        isRight = -1f;
         spriteRenderer = GetComponent<SpriteRenderer>();
 
     }
@@ -77,7 +77,7 @@ public class Move : MonoBehaviour
     public void transformToSuper() {
         hook.transform.localScale *= 2f;
         hook.GetComponent<FishingRod>().dj2d.distance += 2;
-        hook.GetComponent<FishingRod>().rb2d.gravityScale = .8f;
+        hook.GetComponent<FishingRod>().rb2d.gravityScale = .6f;
         hook.GetComponent<FishingRod>().rb2d.drag = 0f;
     }
 
