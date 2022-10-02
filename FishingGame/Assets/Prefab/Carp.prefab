@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1992784050942740548}
   - component: {fileID: 1992784050942740551}
   m_Layer: 0
-  m_Name: Bass
+  m_Name: Carp
   m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93,7 +93,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -9095717837082945937, guid: bd3cb4af8406d4436a2ae8c2aafe1f8d, type: 3}
-  m_Color: {r: 0.7215, g: 0.9056604, b: 0.2170167, a: 1}
+  m_Color: {r: 0.764151, g: 0.139854, b: 0.139854, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -115,11 +115,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e92fe24ffeb762d41a3b922a51004a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontialTurnRate: 10
-  fishSpeed: 0.64
-  verticleBobRate: 0.9
-  riseSpeed: 0.35
-  pointWorth: 1
+  horizontialTurnRate: 1.69
+  fishSpeed: 2.85
+  verticleBobRate: 1.66
+  riseSpeed: 0.54
+  pointWorth: 7
   timerHorizontial: 0
   timerVerticle: 0
   updatedVelocity: 0
