@@ -8,7 +8,6 @@ public class Teleport : MonoBehaviour
     public Transform player;
 
     public bool isForward;
-    public bool isWall2;
     public float distance = 0.2f;
 
     void Start() {

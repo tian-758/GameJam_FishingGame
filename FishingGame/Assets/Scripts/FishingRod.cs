@@ -25,7 +25,7 @@ public class FishingRod : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         dj2d = GetComponent<DistanceJoint2D>();
         hook = gameObject;
-        deployed = false;
+        deployed = true;
     }
 
     // Update is called once per frame

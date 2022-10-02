@@ -14,6 +14,7 @@ public class Move : MonoBehaviour
     
     
     bool isGrounded;
+    bool lineOut;
     public float isRight;
     public float CooldownTime = 0f;
 
@@ -26,10 +27,12 @@ public class Move : MonoBehaviour
     void Start()
     {
         // get the animator component of the GameObject
+        animator = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
         isRight = -1f;
         spriteRenderer = GetComponent<SpriteRenderer>();
-
+        lineOut = true;
+        animator.Play("CastLineAnimation");
     }
 
 
@@ -47,12 +50,14 @@ public class Move : MonoBehaviour
         // change the animator's AnimState variable if a key is pressed
         if (Input.GetKey("d") || Input.GetKey("right"))
         {
+            animator.SetInteger("AnimState", 3);
             rb2d.velocity = new Vector2(speed, rb2d.velocity.y);
             isRight = 1f;
             spriteRenderer.flipX = true;
         }
         else if (Input.GetKey("a") || Input.GetKey("left"))
         {
+            animator.SetInteger("AnimState", 3);
             rb2d.velocity = new Vector2(-speed, rb2d.velocity.y);
             isRight = -1f;
             spriteRenderer.flipX = false;
@@ -60,6 +65,12 @@ public class Move : MonoBehaviour
         else
         {
             rb2d.velocity = new Vector2(0, rb2d.velocity.y);
+            if(lineOut){
+                animator.SetInteger("AnimState", 2);
+            }
+            else{
+                animator.SetInteger("AnimState", 0);
+            }
         }
 
         CooldownTime -= Time.deltaTime;
@@ -67,6 +78,14 @@ public class Move : MonoBehaviour
             CooldownTime = 2.0f;
             hook.GetComponent<FishingRod>().toggleDeploy();
             
+            if(lineOut){
+                lineOut = false;
+                animator.Play("reelInAnimation");
+            }
+            else{
+                lineOut = true;
+                animator.Play("CastLineAnimation");
+            }
         }
 
         

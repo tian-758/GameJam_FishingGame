@@ -1004,7 +1004,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1918626800}
   isForward: 0
-  isWall2: 0
   distance: 0.2
 --- !u!1 &1583461666 stripped
 GameObject:
@@ -1425,7 +1424,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1918626800}
   isForward: 1
-  isWall2: 0
   distance: 0.2
 --- !u!50 &2033902555
 Rigidbody2D:
