@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -25,6 +25,7 @@ public class Timer : MonoBehaviour
     void DisplayTime(float timeToDisplay) {
         if(timeToDisplay < 0) {
             timeToDisplay = 0;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         else if(timeToDisplay > 0){
             timeToDisplay += 1;
