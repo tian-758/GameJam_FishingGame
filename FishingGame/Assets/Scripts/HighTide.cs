@@ -14,8 +14,7 @@ public class HighTide : MonoBehaviour
     public Camera camera;
 
     
-    [SerializeField]
-    public GameObject floor;
+
 
     public bool activated;
 

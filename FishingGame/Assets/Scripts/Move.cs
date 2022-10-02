@@ -18,6 +18,9 @@ public class Move : MonoBehaviour
     public float isRight;
     public float CooldownTime = 0f;
 
+    public float animationCastDuration = 1f;
+    public float animationReelDuration = 1f;
+
     [SerializeField]
     int speed = 4;
     [SerializeField]
@@ -31,8 +34,12 @@ public class Move : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         isRight = -1f;
         spriteRenderer = GetComponent<SpriteRenderer>();
-        lineOut = true;
-        animator.Play("CastLineAnimation");
+        
+        lineOut = false;
+        animator.Play("reelInAnimation");
+        Debug.Log("reeling in");
+        StartCoroutine(waitForAnimation(animationReelDuration));
+
     }
 
 
@@ -76,21 +83,21 @@ public class Move : MonoBehaviour
         CooldownTime -= Time.deltaTime;
         if (Input.GetKey("space") && CooldownTime <= 0f) {
             CooldownTime = 2.0f;
-            hook.GetComponent<FishingRod>().toggleDeploy();
+            
             
             if(lineOut){
                 lineOut = false;
                 animator.Play("reelInAnimation");
+                Debug.Log("reeling in");
+                StartCoroutine(waitForAnimation(animationReelDuration));
             }
             else{
                 lineOut = true;
                 animator.Play("CastLineAnimation");
+                Debug.Log("casting");
+                StartCoroutine(waitForAnimation(animationCastDuration));
             }
         }
-
-        
-
-
     }
 
     public void transformToSuper() {
@@ -105,5 +112,11 @@ public class Move : MonoBehaviour
         hook.GetComponent<FishingRod>().dj2d.distance -= 2;
         hook.GetComponent<FishingRod>().rb2d.gravityScale = .2f;
         hook.GetComponent<FishingRod>().rb2d.drag =.33f;
+    }
+
+    IEnumerator waitForAnimation(float duration) {
+        Debug.Log(duration);
+        yield return new WaitForSeconds(duration);
+        hook.GetComponent<FishingRod>().toggleDeploy();
     }
 }
