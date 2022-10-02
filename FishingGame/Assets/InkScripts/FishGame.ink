@@ -10,8 +10,9 @@ hey i lost my fish can you find it?
 
 {Name("Rabbit")}
 {Icon("Rabbit")}
-    * yeah!
-    * no! 
+* Yes
+* No
+
 
 {Name("Moon")}
 {Icon("MoonGoddess")}
