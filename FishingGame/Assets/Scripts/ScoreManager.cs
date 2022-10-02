@@ -15,8 +15,8 @@ public class ScoreManager : MonoBehaviour
     [SerializeField]
     public int pointsTillHighTide;
     private int pointsLeft;
-    private int score;
-    private int points;
+    public int score;
+    public int points;
     private bool canCountDown;
 
     private void Awake() {

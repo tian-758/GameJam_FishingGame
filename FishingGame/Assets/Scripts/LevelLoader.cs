@@ -7,10 +7,23 @@ public class LevelLoader : MonoBehaviour
 {
     public Animator transition;
     public GameObject bgm;
+    public MainManager data;
+    public ScoreManager score;
     public float transitionAnimationDuration = 1f;
+
+    private void Start()  {
+        data = GameObject.FindGameObjectsWithTag("Data")[0].GetComponent<MainManager>(); 
+    }
 
     public void LoadNextScene() {
 
+        if (score != null && data != null) {
+            data.fishCaught = score.score;
+            data.points = score.points;
+
+        }
+
+        
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
 
     }

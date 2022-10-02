@@ -122,6 +122,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 1817229070938321594}
+  bgm: {fileID: 0}
+  data: {fileID: 0}
+  score: {fileID: 0}
   transitionAnimationDuration: 1
 --- !u!1 &1817229070938321592
 GameObject:

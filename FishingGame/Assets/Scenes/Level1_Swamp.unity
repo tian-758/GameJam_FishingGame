@@ -1583,6 +1583,8 @@ MonoBehaviour:
   pointText: {fileID: 194844224}
   tide: {fileID: 593826050}
   pointsTillHighTide: 10
+  score: 0
+  points: 0
 --- !u!1 &1918626797
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,13 +2103,17 @@ PrefabInstance:
       propertyPath: bgm
       value: 
       objectReference: {fileID: 56281676}
+    - target: {fileID: 1817229070344019796, guid: e95bf0b031be067459971dddc3a567f1, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817229070344019796, guid: e95bf0b031be067459971dddc3a567f1, type: 3}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 1849598616}
     - target: {fileID: 1817229070344019818, guid: e95bf0b031be067459971dddc3a567f1, type: 3}
       propertyPath: m_Name
       value: Level Loader
-      objectReference: {fileID: 0}
-    - target: {fileID: 1817229070344019818, guid: e95bf0b031be067459971dddc3a567f1, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1817229070344019819, guid: e95bf0b031be067459971dddc3a567f1, type: 3}
       propertyPath: m_RootOrder
