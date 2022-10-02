@@ -381,15 +381,15 @@ PrefabInstance:
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishLowWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: 451297db252ff884e9c008deb9d8f75a, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: 4bf9e47672f58714aaaff61324804081, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishHighWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: 451297db252ff884e9c008deb9d8f75a, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: e4ef3049f7f23584abef1061b6fa2371, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishMediumWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: 451297db252ff884e9c008deb9d8f75a, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: e47b6c597991e4746966d5ccf7a33f0d, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: spawnIntervalLow
       value: 3.5
@@ -649,7 +649,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -314.75095, y: 156.79785}
+  m_AnchoredPosition: {x: -295, y: 182}
   m_SizeDelta: {x: 176.4981, y: 44.4043}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1297143704
@@ -761,7 +761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1390,15 +1390,15 @@ PrefabInstance:
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishLowWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: 451297db252ff884e9c008deb9d8f75a, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: 4bf9e47672f58714aaaff61324804081, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishHighWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: 451297db252ff884e9c008deb9d8f75a, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: e4ef3049f7f23584abef1061b6fa2371, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishMediumWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: 451297db252ff884e9c008deb9d8f75a, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: e47b6c597991e4746966d5ccf7a33f0d, type: 3}
     - target: {fileID: 672229883513333284, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: m_Name
       value: FishSpawnerNormal
