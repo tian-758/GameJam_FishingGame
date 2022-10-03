@@ -48,9 +48,9 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
-  m_Direction: 0
+  m_Offset: {x: 2.2048068, y: -0.64169735}
+  m_Size: {x: 2.6319456, y: 1.2104195}
+  m_Direction: 1
 --- !u!212 &1992784050942740549
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -92,9 +92,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: bd3cb4af8406d4436a2ae8c2aafe1f8d, type: 3}
-  m_Color: {r: 0.735849, g: 0.27351367, b: 0.58811545, a: 1}
-  m_FlipX: 0
+  m_Sprite: {fileID: 21300000, guid: 8ea9791d0059b8f40a0f9706bdf2c92d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 2}
@@ -115,11 +115,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e92fe24ffeb762d41a3b922a51004a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontialTurnRate: 5.88
-  fishSpeed: 0.81
-  verticleBobRate: 1.29
-  riseSpeed: 1.66
-  pointWorth: 3
+  horizontialTurnRate: 10.09
+  fishSpeed: 1
+  verticleBobRate: 0.73
+  riseSpeed: 1
+  pointWorth: 2
   timerHorizontial: 0
   timerVerticle: 0
   updatedVelocity: 0

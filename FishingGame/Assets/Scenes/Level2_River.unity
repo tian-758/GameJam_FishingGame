@@ -845,7 +845,7 @@ PrefabInstance:
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishLowWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: e4ef3049f7f23584abef1061b6fa2371, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: 7bcf9598921303b4e86136b0196393bd, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishHighWorth
       value: 
@@ -2399,7 +2399,7 @@ PrefabInstance:
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishLowWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: e4ef3049f7f23584abef1061b6fa2371, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: 7bcf9598921303b4e86136b0196393bd, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishHighWorth
       value: 
