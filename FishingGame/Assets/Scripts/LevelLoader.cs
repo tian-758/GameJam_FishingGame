@@ -10,30 +10,31 @@ public class LevelLoader : MonoBehaviour
     public MainManager data;
     public ScoreManager score;
     public float transitionAnimationDuration = 1f;
+    public string nextSceneName;
 
     private void Start()  {
-        data = GameObject.FindGameObjectsWithTag("Data")[0].GetComponent<MainManager>(); 
+        //data = GameObject.FindGameObjectsWithTag("Data")[0].GetComponent<MainManager>(); 
     }
 
     public void LoadNextScene() {
 
-        if (score != null && data != null) {
-            data.fishCaught = score.score;
-            data.points = score.points;
+        if (score != null) {
+            //data.fishCaught = ScoreManager.score;
+            //data.points = ScoreManager.points;
 
         }
 
         
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+        StartCoroutine(LoadLevel(nextSceneName));
 
     }
 
-    IEnumerator LoadLevel(int levelIndex) {
+    IEnumerator LoadLevel(string nextScene) {
         transition.SetTrigger("Start");
 
         StartCoroutine(bgm.GetComponent<AudioContoller>().StartFade(transitionAnimationDuration, 0f));
         yield return new WaitForSeconds(transitionAnimationDuration);
 
-        SceneManager.LoadScene(levelIndex);
+        SceneManager.LoadScene(nextScene);
     }
 }

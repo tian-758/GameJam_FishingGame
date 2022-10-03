@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 194844224}
   m_Layer: 5
   m_Name: PointCount
-  m_TagString: Untagged
+  m_TagString: Data
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 362777113}
   m_Layer: 5
   m_Name: FishCount
-  m_TagString: Untagged
+  m_TagString: Data
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -442,7 +442,7 @@ Transform:
   m_GameObject: {fileID: 523248745}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 29.89, y: 0.19659, z: -4.260566}
-  m_LocalScale: {x: 2.1402, y: 2.1402, z: 2.1402}
+  m_LocalScale: {x: 0.77, y: 0.77, z: 2.1402}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1218890002}
@@ -489,7 +489,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0328f9ab31cfa56438faecb6aeab1934, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a2a5055937e06374ba9c254d08fbb586, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -810,7 +810,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.1932716, g: 0.826408, b: 0.8396226, a: 1}
+  m_Color: {r: 0.19215687, g: 0.827451, b: 0.8392157, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1149,8 +1149,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233094551}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -31.73, y: 0.19659, z: -4.260566}
-  m_LocalScale: {x: 2.1402, y: 2.1402, z: 2.1402}
+  m_LocalPosition: {x: -31.66, y: 0.19659, z: -4.260566}
+  m_LocalScale: {x: 0.77, y: 0.77, z: 2.1402}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1218890002}
@@ -1197,7 +1197,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0328f9ab31cfa56438faecb6aeab1934, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a2a5055937e06374ba9c254d08fbb586, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1534,7 +1534,7 @@ Transform:
   m_GameObject: {fileID: 1495124449}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.90964, y: 0.19659, z: -4.260566}
-  m_LocalScale: {x: 2.1402, y: 2.1402, z: 2.1402}
+  m_LocalScale: {x: 0.77, y: 0.77, z: 2.1402}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1218890002}
@@ -1581,7 +1581,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0328f9ab31cfa56438faecb6aeab1934, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a2a5055937e06374ba9c254d08fbb586, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1719,7 +1719,7 @@ Transform:
   m_GameObject: {fileID: 1781552475}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 60.63, y: 0.19659, z: -4.260566}
-  m_LocalScale: {x: 2.1402, y: 2.1402, z: 2.1402}
+  m_LocalScale: {x: 0.77, y: 0.77, z: 2.1402}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1218890002}
@@ -1766,7 +1766,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0328f9ab31cfa56438faecb6aeab1934, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a2a5055937e06374ba9c254d08fbb586, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1954,8 +1954,6 @@ MonoBehaviour:
   pointText: {fileID: 194844224}
   tide: {fileID: 593826050}
   pointsTillHighTide: 10
-  score: 0
-  points: 0
 --- !u!1 &1918626797
 GameObject:
   m_ObjectHideFlags: 0
@@ -2482,6 +2480,10 @@ PrefabInstance:
       propertyPath: score
       value: 
       objectReference: {fileID: 1849598616}
+    - target: {fileID: 1817229070344019796, guid: e95bf0b031be067459971dddc3a567f1, type: 3}
+      propertyPath: nextSceneName
+      value: VisualNovel_Act2
+      objectReference: {fileID: 0}
     - target: {fileID: 1817229070344019818, guid: e95bf0b031be067459971dddc3a567f1, type: 3}
       propertyPath: m_Name
       value: Level Loader

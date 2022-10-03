@@ -7,7 +7,7 @@ public class Play : MonoBehaviour
 {
     public void NextScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("VisualNovel_Act1");
         Debug.Log("Moved to next scene.");
     }
 }
