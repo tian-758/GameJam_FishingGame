@@ -1293,7 +1293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dbac389e0fc5644cb321d6eb49d1183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeValue: 30
+  timeValue: 150
   timeText: {fileID: 1297143704}
   loadNextScene: {fileID: 670088034}
 --- !u!222 &1297143706
