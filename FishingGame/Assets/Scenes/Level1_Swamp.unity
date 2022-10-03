@@ -849,7 +849,7 @@ PrefabInstance:
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishHighWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: e4ef3049f7f23584abef1061b6fa2371, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: c0e8fcc23b4532345b299c6aebc86a2c, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishMediumWorth
       value: 
@@ -2082,7 +2082,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!95 &1918626803
 Animator:
   serializedVersion: 4
@@ -2401,7 +2401,7 @@ PrefabInstance:
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishHighWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: e4ef3049f7f23584abef1061b6fa2371, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: c0e8fcc23b4532345b299c6aebc86a2c, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishMediumWorth
       value: 

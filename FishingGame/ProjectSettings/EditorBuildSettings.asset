@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/VisualNovel_Act1.unity
     guid: 8209e84a4fe2d614b89736da491c2d93
   - enabled: 1
+    path: Assets/Scenes/VisualNovel_Act1.5.unity
+    guid: 314c5192887825647af64cff34a6c730
+  - enabled: 1
     path: Assets/Scenes/VisualNovel_Act2.unity
     guid: bd419da54d792164baa6da86f0a47c2d
   - enabled: 1

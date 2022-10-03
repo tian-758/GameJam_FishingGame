@@ -21,6 +21,9 @@ public class ScriptReader : MonoBehaviour
     [SerializeField]
     private Button choiceBasePrefab;
 
+    [SerializeField]
+    public LevelLoader loadNextScene;
+
     void Start()
     {
         LoadStory();
@@ -54,7 +57,7 @@ public class ScriptReader : MonoBehaviour
             //dialogueBox.text = "End";
         }
         else {
-            //loadNextScene.LoadNextScene(); // No more dialogue, move on to fishing
+            loadNextScene.LoadNextScene(); // No more dialogue, move on to fishing
         }
     }
 

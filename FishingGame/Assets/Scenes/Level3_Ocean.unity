@@ -1954,8 +1954,6 @@ MonoBehaviour:
   pointText: {fileID: 194844224}
   tide: {fileID: 593826050}
   pointsTillHighTide: 20
-  score: 0
-  points: 0
 --- !u!1 &1918626797
 GameObject:
   m_ObjectHideFlags: 0
@@ -2084,7 +2082,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!95 &1918626803
 Animator:
   serializedVersion: 4
