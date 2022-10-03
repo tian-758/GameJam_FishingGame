@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 194844224}
   m_Layer: 5
   m_Name: PointCount
-  m_TagString: Untagged
+  m_TagString: Data
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 362777113}
   m_Layer: 5
   m_Name: FishCount
-  m_TagString: Untagged
+  m_TagString: Data
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1293,7 +1293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dbac389e0fc5644cb321d6eb49d1183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeValue: 150
+  timeValue: 30
   timeText: {fileID: 1297143704}
   loadNextScene: {fileID: 670088034}
 --- !u!222 &1297143706
@@ -1954,8 +1954,6 @@ MonoBehaviour:
   pointText: {fileID: 194844224}
   tide: {fileID: 593826050}
   pointsTillHighTide: 10
-  score: 0
-  points: 0
 --- !u!1 &1918626797
 GameObject:
   m_ObjectHideFlags: 0
@@ -2482,6 +2480,10 @@ PrefabInstance:
       propertyPath: score
       value: 
       objectReference: {fileID: 1849598616}
+    - target: {fileID: 1817229070344019796, guid: e95bf0b031be067459971dddc3a567f1, type: 3}
+      propertyPath: nextSceneName
+      value: VisualNovel_Act2
+      objectReference: {fileID: 0}
     - target: {fileID: 1817229070344019818, guid: e95bf0b031be067459971dddc3a567f1, type: 3}
       propertyPath: m_Name
       value: Level Loader

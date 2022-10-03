@@ -2494,6 +2494,10 @@ PrefabInstance:
       propertyPath: score
       value: 
       objectReference: {fileID: 1849598616}
+    - target: {fileID: 1817229070344019796, guid: e95bf0b031be067459971dddc3a567f1, type: 3}
+      propertyPath: nextSceneName
+      value: VisualNovel_Act4
+      objectReference: {fileID: 0}
     - target: {fileID: 1817229070344019818, guid: e95bf0b031be067459971dddc3a567f1, type: 3}
       propertyPath: m_Name
       value: Level Loader

@@ -1,12 +1,15 @@
 EXTERNAL Name(charName)
 EXTERNAL Icon(charName)
 
+VAR FishCaught = 0
+VAR FishValue = 0
+
 {Name("Moon")}
 {Icon("MoonGoddess")}
 Scipt Draft
 anthropomorphized moon shows up, surprises protag and friend/antag while fishing
 
-hey i lost my fish can you find it?
+hey i lost my fish can you find it? {FishCaught}
 
 {Name("Rabbit")}
 {Icon("Rabbit")}
