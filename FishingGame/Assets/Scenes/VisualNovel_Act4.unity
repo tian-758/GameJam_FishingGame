@@ -249,7 +249,7 @@ PrefabInstance:
     - target: {fileID: 1817229070344019796, guid: e95bf0b031be067459971dddc3a567f1, type: 3}
       propertyPath: bgm
       value: 
-      objectReference: {fileID: 1757690517}
+      objectReference: {fileID: 1635655707}
     - target: {fileID: 1817229070344019796, guid: e95bf0b031be067459971dddc3a567f1, type: 3}
       propertyPath: data
       value: 
@@ -260,7 +260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1817229070344019796, guid: e95bf0b031be067459971dddc3a567f1, type: 3}
       propertyPath: nextSceneName
-      value: Title Screen
+      value: End
       objectReference: {fileID: 0}
     - target: {fileID: 1817229070344019818, guid: e95bf0b031be067459971dddc3a567f1, type: 3}
       propertyPath: m_Name
