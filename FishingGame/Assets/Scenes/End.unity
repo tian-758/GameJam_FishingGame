@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -479.63538, y: -473}
+  m_AnchoredPosition: {x: -434, y: -478}
   m_SizeDelta: {x: 564.1995, y: 322.1401}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &206851567
@@ -387,9 +387,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\n\nCREDITS\n\nArt: \nJ. Brahm Canare\r\nMarley/Gwendolyn Tankovich\r\n\nMusic:\nChips
-    / Cadence Hagenauer\r\nArachne\r\n\nCode:\nSophia Li\r\n(odacovahserf) \r\nChristos
-    Xanthopoulos\r"
+  m_text: "\n\n\nCREDITS\n\nArt & Writing: \nJ. Brahm Canare\r\nMarley/Gwendolyn
+    Tankovich\r\n\nMusic:\nChips / Cadence Hagenauer\r\nArachne\r\n\nCode:\nSophia
+    Li\r\nKevin (odacovahserf) \r\nChristos Xanthopoulos\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 28e6298692e35534f8b7bc4a3c6a009e, type: 2}
   m_sharedMaterial: {fileID: -9050086728726388128, guid: 28e6298692e35534f8b7bc4a3c6a009e, type: 2}
@@ -592,7 +592,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 556, y: -445}
+  m_AnchoredPosition: {x: 556, y: -452}
   m_SizeDelta: {x: 693.165, y: 336.7438}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &938063578
@@ -1331,7 +1331,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 351, y: -466}
+  m_AnchoredPosition: {x: 353, y: -471}
   m_SizeDelta: {x: 516.74, y: 235.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1839172748

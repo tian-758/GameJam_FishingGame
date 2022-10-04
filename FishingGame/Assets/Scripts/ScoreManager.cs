@@ -18,7 +18,7 @@ public class ScoreManager : MonoBehaviour
     public int pointsTillHighTide;
     private int pointsLeft;
     public int sceneID;
-    int score; // public static int score to share score across scenes
+    int score; // do public static int score to share score across scenes
     int points;
     int highscoreFish;
     int highscorePoints;
@@ -89,10 +89,12 @@ public class ScoreManager : MonoBehaviour
     IEnumerator startHightide() {
 
         tide.activateHighTide();
+        Debug.Log("Started Coroutine at timestamp : " + Time.time);
 
+        pointsLeft = pointsTillHighTide;
         canCountDown = false;
-
         yield return new WaitForSeconds(tide.highTideDuration);
+        Debug.Log("Finished Coroutine at timestamp : " + Time.time);
 
         tide.deactivateHighTide();
 

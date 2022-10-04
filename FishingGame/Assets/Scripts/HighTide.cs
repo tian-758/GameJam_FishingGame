@@ -13,7 +13,7 @@ public class HighTide : MonoBehaviour
     [SerializeField]
     public Camera mainCamera;
     [SerializeField]
-    public float highTideDuration;
+    public int highTideDuration;
 
 
     // Start is called before the first frame update
