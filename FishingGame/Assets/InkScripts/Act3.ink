@@ -35,8 +35,7 @@ CAT turns away from RABBIT and begins to scheme.
 
 {Name("Cat")}
 {Icon("Cat")}
-(whispering)
-I wonder how they can do that? Seems like it could fetch a pretty penny if we sell it… Maybe I can talk them into it.
+(whispering) I wonder how they can do that? Seems like it could fetch a pretty penny if we sell it… Maybe I can talk them into it.
 
 {Name("")}
 {Icon("Cat")}
@@ -49,8 +48,7 @@ Not all at once though, we don’t want to overfish, so leave me in charge of le
 
 {Name("Cat")}
 {Icon("Cat")}
-(thinking)
-And if I charge ticket sales and talk the power up a bit, no big deal; I’ll just have a bit more spending money for tasty treats.
+(thinking) And if I charge ticket sales and talk the power up a bit, no big deal; I’ll just have a bit more spending money for tasty treats.
 
 {Name("")}
 {Icon("Rabbit")}

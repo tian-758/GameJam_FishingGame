@@ -27,8 +27,8 @@ public class ScriptReader : MonoBehaviour
     void Start()
     {
         LoadStory();
-        _StoryScript.variablesState["FishCaught"] = ScoreManager.score;
-        _StoryScript.variablesState["FishValue"] = ScoreManager.points;
+        //_StoryScript.variablesState["FishCaught"] = ScoreManager.score;
+        //_StoryScript.variablesState["FishValue"] = ScoreManager.points;
     }
 
     void Update() {
