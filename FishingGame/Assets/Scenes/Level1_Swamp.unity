@@ -996,7 +996,7 @@ PrefabInstance:
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishMediumWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: e47b6c597991e4746966d5ccf7a33f0d, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: e4ef3049f7f23584abef1061b6fa2371, type: 3}
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: spawnIntervalLow
       value: 3.5
@@ -2262,7 +2262,7 @@ PrefabInstance:
     - target: {fileID: 672229883513333282, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: fishMediumWorth
       value: 
-      objectReference: {fileID: 1992784050942740550, guid: e47b6c597991e4746966d5ccf7a33f0d, type: 3}
+      objectReference: {fileID: 1992784050942740550, guid: e4ef3049f7f23584abef1061b6fa2371, type: 3}
     - target: {fileID: 672229883513333284, guid: 5ccc957e723f4b5448b2dacda00da430, type: 3}
       propertyPath: m_Name
       value: FishSpawnerNormal

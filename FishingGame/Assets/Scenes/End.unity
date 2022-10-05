@@ -389,7 +389,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\n\n\nCREDITS\n\nArt & Writing: \nJ. Brahm Canare\r\nMarley/Gwendolyn
     Tankovich\r\n\nMusic:\nChips / Cadence Hagenauer\r\nArachne\r\n\nCode:\nSophia
-    Li\r\nKevin (odacovahserf) \r\nChristos Xanthopoulos\r"
+    Li\r\nKevin Tian\nChristos Xanthopoulos\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 28e6298692e35534f8b7bc4a3c6a009e, type: 2}
   m_sharedMaterial: {fileID: -9050086728726388128, guid: 28e6298692e35534f8b7bc4a3c6a009e, type: 2}
